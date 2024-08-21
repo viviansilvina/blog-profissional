@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'image/intro.jpg' %}" alt="..." />
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">Hellooo! Prazer, Vivian Silvina!</span>
+                    <span class="section-heading-lower">Bem-vindo(a)!</span>
+                </h2>
+                <p class="mb-3">
+                    Este blog foi criado para fins acadêmicos, para a disciplina de Programação para Internet, 
+                    ministrada pelo professor Jeferson Queiroga. Usei o bootstrap para a estilização do site.
+                    Navegando no site você conhecerá um pouco sobre mim.
+                    O site contém tanto informações profissionais quanto pessoais.
+                    Thank you for your attention.</p>
+                <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Quem eu</span>
+                        <span class="section-heading-lower">sou?</span>
+                    </h2>
+                    <p class="mb-0">Vivian Silvina Gonçalves, serva do Deus altíssimo, filha de Cida e Antônio, moro em Rodolfo Fernandes, tenho duas irmãs, sendo uma delas minha irmâ gêmea.
+                        Até o presente momento, curso o técnico em Informática integrado ao Ensino Médio no IFRN - Campus Pau dos Ferros. 
+                        Gosto de ler, ouvir música, assistir filmes e séries, cantar. Sou apaixonada por Python e Banco de Dados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
