@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
-{% for post in posts %}<section class="page-section">
+{% for post in posts %}
+<section class="page-section">
     <div class="container">
         <div class="product-item">
             <div class="product-item-title d-flex">
@@ -14,8 +15,8 @@
             </div>
             <div style="text-align: center;" class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0">
                 {% if post.video %}
-                <video width="500" controls style="display: block; margin: 0 auto;">
-                    <source src="{{ post.video.url }}" type="video/mp4">
+                <video width="450"; height="800" controls style="display: block; margin: 0 auto;" class="img-fluid rounded">
+                    <source src="{{ post.video.url }}" type="video/mp4" >
                 </video>
                 {% endif %}
                 
