@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Interesses
+from .models import *
 
 # Create your views here.
 def index(request):
@@ -9,11 +9,18 @@ def sobre(request):
     return render(request, 'sobre.html')
 
 def academico(request):
-    interesse = Interesses.objects.all()
+    habilidades = Habilidades_tecnicas.objects.all()
+    atividades = Atividades_extra.objects.all()
     contexto = {
-        'lista': interesse
+        'lista': habilidades,
+        'cursos': atividades,
     }
     return render(request, 'academico.html', contexto)
 
 def pessoal(request):
-    return render(request, 'pessoal.html')
+    publicacao = Pessoal.objects.all()
+    contexto = {
+        'posts': publicacao,
+    }
+
+    return render(request, 'pessoal.html', contexto)
